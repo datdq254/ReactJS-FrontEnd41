@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./components/Header";
+import HeaderRFC from "./components/HeaderRFC";
+import BaiTapDanLayOut from "./components/BaiTapDanLayOut/BaiTapDanLayOut";
+import DataBinding from "./dataBinding/DataBinding";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    return( 
+    <div className = "App" > 
+        {/* để gọi component ta tạo ra ta chỉ cần gọi tên màu vàng của class đó nó sẽ tự import thư viện cho ta */}
+        {/* <BaiTapDanLayOut></BaiTapDanLayOut> */}
+        <DataBinding></DataBinding>
     </div>
-  );
+    );
 }
 
 export default App;
